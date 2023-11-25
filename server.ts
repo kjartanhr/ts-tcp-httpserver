@@ -16,7 +16,7 @@ type HttpRequestLine = {
 type ParsedHttpData = [
     HttpRequestLine,
     HttpHeaders
-]
+];
 
 function connectionHandler(conn: net.Socket) {
     const remoteAddress = conn.remoteAddress + ':' + conn.remotePort;
